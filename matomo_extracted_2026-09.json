@@ -1,0 +1,298 @@
+{
+  "month": "2026-09",
+  "extractedAt": "2026-10-01T20:20:39.096Z",
+  "summary": {
+    "visits": 81447,
+    "uniqueVisitors": 0,
+    "actions": 278424,
+    "bounceRate": "42%",
+    "avgTimeOnSiteSec": 153,
+    "actionsPerVisit": 3.4
+  },
+  "trafficChannels": [
+    {
+      "label": "Ingressi Diretti",
+      "visits": 42270,
+      "actions": 135902
+    },
+    {
+      "label": "Motori di ricerca",
+      "visits": 31350,
+      "actions": 116428
+    },
+    {
+      "label": "Campagne",
+      "visits": 3773,
+      "actions": 13063
+    },
+    {
+      "label": "Siti web",
+      "visits": 2624,
+      "actions": 7092
+    },
+    {
+      "label": "AI Assistants",
+      "visits": 824,
+      "actions": 3948
+    },
+    {
+      "label": "Social Network",
+      "visits": 606,
+      "actions": 1991
+    }
+  ],
+  "devices": [
+    {
+      "label": "Desktop",
+      "visits": 63358
+    },
+    {
+      "label": "Smartphone",
+      "visits": 16833
+    },
+    {
+      "label": "Phablet",
+      "visits": 934
+    },
+    {
+      "label": "Tablet",
+      "visits": 276
+    },
+    {
+      "label": "Apparecchio TV",
+      "visits": 38
+    },
+    {
+      "label": "Sconosciuto",
+      "visits": 8
+    },
+    {
+      "label": "Browser in auto",
+      "visits": 0
+    },
+    {
+      "label": "Console",
+      "visits": 0
+    },
+    {
+      "label": "Feature phone",
+      "visits": 0
+    },
+    {
+      "label": "Fotocamera",
+      "visits": 0
+    },
+    {
+      "label": "Indossabile",
+      "visits": 0
+    },
+    {
+      "label": "Media player portatile",
+      "visits": 0
+    },
+    {
+      "label": "Periferica",
+      "visits": 0
+    },
+    {
+      "label": "Smart display",
+      "visits": 0
+    },
+    {
+      "label": "Smart speaker",
+      "visits": 0
+    }
+  ],
+  "italianSection": {
+    "totalVisits": 18477,
+    "totalPageviews": 21447,
+    "expertPartners": {
+      "visits": 813,
+      "pageviews": 966,
+      "bounceRate": "41%",
+      "avgTimeOnPageSec": 87,
+      "subpages": [
+        {
+          "label": "/index",
+          "visits": 176,
+          "hits": 236
+        },
+        {
+          "label": "digital-solutions",
+          "visits": 132,
+          "hits": 155
+        },
+        {
+          "label": "en",
+          "visits": 103,
+          "hits": 111
+        },
+        {
+          "label": "sensory",
+          "visits": 101,
+          "hits": 111
+        },
+        {
+          "label": "food-safety",
+          "visits": 59,
+          "hits": 62
+        },
+        {
+          "label": "food-science-center",
+          "visits": 57,
+          "hits": 62
+        },
+        {
+          "label": "qhse-consulenza",
+          "visits": 45,
+          "hits": 53
+        },
+        {
+          "label": "servizi-regolatori-e-di-etichettatura",
+          "visits": 44,
+          "hits": 45
+        },
+        {
+          "label": "pt",
+          "visits": 15,
+          "hits": 16
+        },
+        {
+          "label": "auditing-ispezioni",
+          "visits": 10,
+          "hits": 10
+        },
+        {
+          "label": "/pt",
+          "visits": 8,
+          "hits": 10
+        },
+        {
+          "label": "/was_404_check",
+          "visits": 8,
+          "hits": 39
+        },
+        {
+          "label": "es",
+          "visits": 8,
+          "hits": 9
+        },
+        {
+          "label": "it",
+          "visits": 5,
+          "hits": 5
+        },
+        {
+          "label": "nl",
+          "visits": 5,
+          "hits": 5
+        },
+        {
+          "label": "fr",
+          "visits": 4,
+          "hits": 4
+        },
+        {
+          "label": "/\"><img src=x onerror=window.top._tenable_wasscan_js_namespace_taint_tracer.log_execution_flow_sink()>",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "/was_404_check\"><img src=x onerror=window.top._tenable_wasscan_js_namespace_taint_tracer.log_execution_flow_sink()>",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "pl",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "sites",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "was_404_check",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "was_404_checkjaVasCript:",
+          "visits": 3,
+          "hits": 3
+        },
+        {
+          "label": "de",
+          "visits": 2,
+          "hits": 2
+        },
+        {
+          "label": "/\"><wasblzteye96jx1>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/\"><wasqnfpxwsjhyrb>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/\"><wasvhzvaszshl74>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/<wasblzteye96jx1>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/<wasqnfpxwsjhyrb>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/<wasvhzvaszshl74>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/imprint",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/it",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/was_404_check\"><wasi8w0qtvkl7rd>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/was_404_check\"><wasoh9vgrvms0di>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/was_404_check\"><wassjc9zjdaby2c>",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "/[",
+          "visits": 1,
+          "hits": 1
+        },
+        {
+          "label": "services",
+          "visits": 1,
+          "hits": 1
+        }
+      ]
+    }
+  }
+}
