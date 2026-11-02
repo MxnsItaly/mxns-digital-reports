@@ -534,17 +534,17 @@
         Archivio Mensile 2026
       </div>
       <div class="month-pills-list">
-        <div class="month-pill active" id="btn-month-sept">
+        <div class="month-pill" id="btn-month-sept" onclick="selectMonth('2026-09')" title="Visualizza Report Settembre 2026">
           <span>Settembre 2026</span>
-          <span class="pill-tag">Live &bull; 14 Pag.</span>
+          <span class="pill-tag" id="tag-month-sept">Archivio &bull; 14 Pag.</span>
+        </div>
+        <div class="month-pill active" id="btn-month-oct" onclick="selectMonth('2026-10')" title="Visualizza Report Ottobre 2026">
+          <span>Ottobre 2026</span>
+          <span class="pill-tag" id="tag-month-oct">Live &bull; 14 Pag.</span>
         </div>
         <div class="month-pill disabled" title="In arrivo al rilascio dati">
-          <span>Ottobre 2026</span>
-          <span class="pill-tag">Prossimo</span>
-        </div>
-        <div class="month-pill disabled" title="Pianificato">
           <span>Novembre 2026</span>
-          <span class="pill-tag">Q4</span>
+          <span class="pill-tag">Prossimo</span>
         </div>
         <div class="month-pill disabled" title="Pianificato">
           <span>Dicembre 2026</span>
@@ -553,58 +553,58 @@
       </div>
     </div>
 
-    <!-- 2. KPI Summary Cards for Selected Month (Settembre 2026) -->
-    <div class="kpi-ribbon">
+    <!-- 2. KPI Summary Cards for Selected Month -->
+    <div class="kpi-ribbon" id="kpiRibbon">
       <!-- LinkedIn Card -->
       <div class="kpi-card navy">
         <div class="kpi-header">
-          <span class="kpi-title">LinkedIn Followers</span>
-          <span class="kpi-badge">+79.9%</span>
+          <span class="kpi-title">LinkedIn Corporate</span>
+          <span class="kpi-badge">+63.1%</span>
         </div>
         <div class="kpi-value-row">
-          <span class="kpi-number">466</span>
-          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-navy);">nuovi</span>
+          <span class="kpi-number">87.856</span>
+          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-navy);">impression</span>
         </div>
-        <div class="kpi-subtext">53.869 Impression totali (+110.5%) &bull; 24 post</div>
+        <div class="kpi-subtext">463 nuovi follower &bull; 26 post (+8.3%)</div>
       </div>
 
       <!-- Mail Card -->
       <div class="kpi-card cyan">
         <div class="kpi-header">
           <span class="kpi-title">Direct Email Marketing</span>
-          <span class="kpi-badge">+523.3%</span>
+          <span class="kpi-badge">+118.8%</span>
         </div>
         <div class="kpi-value-row">
-          <span class="kpi-number">37.4%</span>
-          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-cyan);">open rate</span>
+          <span class="kpi-number">15.844</span>
+          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-cyan);">aperture uniche</span>
         </div>
-        <div class="kpi-subtext">10 campagne (+150%) &bull; 6.3% click rate (+215%)</div>
+        <div class="kpi-subtext">12 campagne &bull; 96.942 consegnate (+150.4%)</div>
       </div>
 
       <!-- Website Traffic Card -->
       <div class="kpi-card green">
         <div class="kpi-header">
           <span class="kpi-title">Website Traffic (Matomo)</span>
-          <span class="kpi-badge">+55.7%</span>
+          <span class="kpi-badge">+38.0%</span>
         </div>
         <div class="kpi-value-row">
-          <span class="kpi-number">11.612</span>
+          <span class="kpi-number">16.026</span>
           <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-green);">visite</span>
         </div>
-        <div class="kpi-subtext">3.7 azioni/visita &bull; 35.0% bounce rate (-5.4%)</div>
+        <div class="kpi-subtext">4.3 azioni/visita &bull; 28.0% bounce rate (-20.0%)</div>
       </div>
 
       <!-- Form & Conversions Card -->
       <div class="kpi-card navy">
         <div class="kpi-header">
-          <span class="kpi-title">Richieste Contatto & Brochure</span>
-          <span class="kpi-badge neutral">12 Form / 5 Broc.</span>
+          <span class="kpi-title">Conversioni &amp; Mxns Shop</span>
+          <span class="kpi-badge">9 Ord. Shop</span>
         </div>
         <div class="kpi-value-row">
-          <span class="kpi-number">17</span>
-          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-navy);">conversioni</span>
+          <span class="kpi-number">125</span>
+          <span style="font-size:0.8rem; font-weight:700; color:var(--mxns-navy);">lead &amp; download</span>
         </div>
-        <div class="kpi-subtext">Food (7) &bull; Pharma (4) &bull; Enviro (1)</div>
+        <div class="kpi-subtext">118 Form (+10.3%) &bull; Shop €2.230,16 (+86.3%)</div>
       </div>
     </div>
 
@@ -620,11 +620,11 @@
             Azioni Rapide
           </div>
           <div class="action-btn-group">
-            <a href="report_digitale_settembre2026_personalizzato_DEF.html" target="_blank" class="btn btn-primary">
+            <a id="btnFullScreenLink" href="report_digitale_2026_10_ottobre.html" target="_blank" class="btn btn-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               Apri Report a Schermo Intero
             </a>
-            <a href="mxns_DigitalReport_Settembre26.pdf" download="mxns_DigitalReport_Settembre2026.pdf" class="btn btn-green">
+            <a id="btnDownloadPdf" href="mxns_DigitalReport_Ottobre26.pdf" download="mxns_DigitalReport_Ottobre26.pdf" class="btn btn-green">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
               Scarica PDF Ufficiale (14 Pag.)
             </a>
@@ -647,51 +647,51 @@
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(3)">
               <span><strong class="slide-num">03</strong> Business Units Overview</span>
-              <span class="slide-tag">Macro</span>
+              <span class="slide-tag">BU Web</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(4)">
-              <span><strong class="slide-num">04</strong> LinkedIn Performance</span>
+              <span><strong class="slide-num">04</strong> LinkedIn Corporate &amp; Community</span>
               <span class="slide-tag">Social</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(5)">
-              <span><strong class="slide-num">05</strong> LinkedIn Top Content</span>
-              <span class="slide-tag">Social</span>
+              <span><strong class="slide-num">05</strong> Expert Partners (Social &amp; Web)</span>
+              <span class="slide-tag">EP</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(6)">
-              <span><strong class="slide-num">06</strong> Email Marketing Overview</span>
-              <span class="slide-tag">Dem</span>
+              <span><strong class="slide-num">06</strong> Email Marketing &amp; SendGrid</span>
+              <span class="slide-tag">DEM</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(7)">
-              <span><strong class="slide-num">07</strong> Email Performance Dettaglio</span>
-              <span class="slide-tag">Dem</span>
+              <span><strong class="slide-num">07</strong> Website Overview &amp; Sviluppo</span>
+              <span class="slide-tag">Matomo</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(8)">
-              <span><strong class="slide-num">08</strong> Sito Web: Canali di Traffico</span>
-              <span class="slide-tag">Matomo</span>
+              <span><strong class="slide-num">08</strong> Sorgenti, Device &amp; Top Pagine</span>
+              <span class="slide-tag">Traffic</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(9)">
-              <span><strong class="slide-num">09</strong> Top Pagine & Sezioni</span>
-              <span class="slide-tag">Matomo</span>
+              <span><strong class="slide-num">09</strong> Blog &amp; Articoli Editoriali</span>
+              <span class="slide-tag">Blog</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(10)">
-              <span><strong class="slide-num">10</strong> Blog Performance Q3</span>
-              <span class="slide-tag">Content</span>
+              <span><strong class="slide-num">10</strong> Conversioni &amp; Mxns Shop</span>
+              <span class="slide-tag">Leads</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(11)">
-              <span><strong class="slide-num">11</strong> Conversioni: Form & Brochure</span>
-              <span class="slide-tag">Lead</span>
+              <span><strong class="slide-num">11</strong> Copertura Geografica</span>
+              <span class="slide-tag">Geo</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(12)">
-              <span><strong class="slide-num">12</strong> SEO & Google Search Console</span>
+              <span><strong class="slide-num">12</strong> SEO &amp; Google Search Console</span>
               <span class="slide-tag">Search</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(13)">
-              <span><strong class="slide-num">13</strong> Device & Demografica</span>
-              <span class="slide-tag">Audience</span>
+              <span><strong class="slide-num">13</strong> Executive Recap &amp; Conclusioni</span>
+              <span class="slide-tag">Recap</span>
             </a>
             <a class="slide-index-item" onclick="jumpToSlide(14)">
-              <span><strong class="slide-num">14</strong> Conclusioni & Next Steps</span>
-              <span class="slide-tag">Strategy</span>
+              <span><strong class="slide-num">14</strong> Retrocopertina Ufficiale</span>
+              <span class="slide-tag">Cover</span>
             </a>
           </nav>
         </div>
@@ -703,7 +703,7 @@
         <div class="viewer-toolbar">
           <div class="viewer-info">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            Visualizzatore Live &bull; <span id="currentDocLabel">Settembre 2026 (Personalizzato DEF)</span>
+            Visualizzatore Live &bull; <span id="currentDocLabel">Ottobre 2026 (Ufficiale DEF)</span>
           </div>
           <div class="viewer-controls">
             <button class="tool-btn" onclick="reloadFrame()" title="Ricarica Anteprima">
@@ -717,7 +717,7 @@
           </div>
         </div>
 
-        <iframe id="reportFrame" class="report-frame" src="report_digitale_settembre2026_personalizzato_DEF.html"></iframe>
+        <iframe id="reportFrame" class="report-frame" src="report_digitale_2026_10_ottobre.html"></iframe>
       </main>
 
     </div>
@@ -726,11 +726,166 @@
 
   <!-- Footer -->
   <footer class="hub-footer">
-    <div><strong>Mérieux NutriSciences Italia</strong> &bull; Corporate Digital Communications & Analytics</div>
+    <div><strong>Mérieux NutriSciences Italia</strong> &bull; Corporate Digital Communications &amp; Analytics</div>
     <div>Sistema di Reportistica Automatizzato con Master Template Integrato</div>
   </footer>
 
   <script>
+    const MONTHS_CONFIG = {
+      '2026-10': {
+        pillId: 'btn-month-oct',
+        docLabel: 'Ottobre 2026 (Ufficiale DEF)',
+        htmlUrl: 'report_digitale_2026_10_ottobre.html',
+        pdfUrl: 'mxns_DigitalReport_Ottobre26.pdf',
+        pdfDownload: 'mxns_DigitalReport_Ottobre26.pdf',
+        kpis: [
+          {
+            theme: 'navy',
+            title: 'LinkedIn Corporate',
+            badge: '+63.1%',
+            badgeClass: 'kpi-badge',
+            number: '87.856',
+            unit: 'impression',
+            unitColor: 'var(--mxns-navy)',
+            subtext: '463 nuovi follower &bull; 26 post (+8.3%)'
+          },
+          {
+            theme: 'cyan',
+            title: 'Direct Email Marketing',
+            badge: '+118.8%',
+            badgeClass: 'kpi-badge',
+            number: '15.844',
+            unit: 'aperture uniche',
+            unitColor: 'var(--mxns-cyan)',
+            subtext: '12 campagne &bull; 96.942 consegnate (+150.4%)'
+          },
+          {
+            theme: 'green',
+            title: 'Website Traffic (Matomo)',
+            badge: '+38.0%',
+            badgeClass: 'kpi-badge',
+            number: '16.026',
+            unit: 'visite',
+            unitColor: 'var(--mxns-green)',
+            subtext: '4.3 azioni/visita &bull; 28.0% bounce rate (-20.0%)'
+          },
+          {
+            theme: 'navy',
+            title: 'Conversioni &amp; Mxns Shop',
+            badge: '9 Ord. Shop',
+            badgeClass: 'kpi-badge',
+            number: '125',
+            unit: 'lead &amp; download',
+            unitColor: 'var(--mxns-navy)',
+            subtext: '118 Form (+10.3%) &bull; Shop €2.230,16 (+86.3%)'
+          }
+        ]
+      },
+      '2026-09': {
+        pillId: 'btn-month-sept',
+        docLabel: 'Settembre 2026 (Personalizzato DEF)',
+        htmlUrl: 'report_digitale_settembre2026_personalizzato_DEF.html',
+        pdfUrl: 'mxns_DigitalReport_Settembre26.pdf',
+        pdfDownload: 'mxns_DigitalReport_Settembre2026.pdf',
+        kpis: [
+          {
+            theme: 'navy',
+            title: 'LinkedIn Followers',
+            badge: '+79.9%',
+            badgeClass: 'kpi-badge',
+            number: '466',
+            unit: 'nuovi',
+            unitColor: 'var(--mxns-navy)',
+            subtext: '53.869 Impression totali (+110.5%) &bull; 24 post'
+          },
+          {
+            theme: 'cyan',
+            title: 'Direct Email Marketing',
+            badge: '+523.3%',
+            badgeClass: 'kpi-badge',
+            number: '37.4%',
+            unit: 'open rate',
+            unitColor: 'var(--mxns-cyan)',
+            subtext: '10 campagne (+150%) &bull; 6.3% click rate (+215%)'
+          },
+          {
+            theme: 'green',
+            title: 'Website Traffic (Matomo)',
+            badge: '+55.7%',
+            badgeClass: 'kpi-badge',
+            number: '11.612',
+            unit: 'visite',
+            unitColor: 'var(--mxns-green)',
+            subtext: '3.7 azioni/visita &bull; 35.0% bounce rate (-5.4%)'
+          },
+          {
+            theme: 'navy',
+            title: 'Conversioni &amp; Mxns Shop',
+            badge: '7 Ord. Shop',
+            badgeClass: 'kpi-badge neutral',
+            number: '148',
+            unit: 'moduli settembre',
+            unitColor: 'var(--mxns-navy)',
+            subtext: '241 Moduli Q3 &bull; Shop Q3 €3.556,30 (22 ord.)'
+          }
+        ]
+      }
+    };
+
+    let currentMonthKey = '2026-10';
+
+    function selectMonth(monthKey) {
+      const cfg = MONTHS_CONFIG[monthKey];
+      if (!cfg) return;
+      currentMonthKey = monthKey;
+
+      // 1. Update Month Pills
+      document.querySelectorAll('.month-pill:not(.disabled)').forEach(el => el.classList.remove('active'));
+      const activePill = document.getElementById(cfg.pillId);
+      if (activePill) activePill.classList.add('active');
+
+      // 2. Render KPI Ribbon
+      const ribbon = document.getElementById('kpiRibbon');
+      if (ribbon) {
+        ribbon.innerHTML = cfg.kpis.map(k => `
+          <div class="kpi-card ${k.theme}">
+            <div class="kpi-header">
+              <span class="kpi-title">${k.title}</span>
+              <span class="${k.badgeClass}">${k.badge}</span>
+            </div>
+            <div class="kpi-value-row">
+              <span class="kpi-number">${k.number}</span>
+              <span style="font-size:0.8rem; font-weight:700; color:${k.unitColor};">${k.unit}</span>
+            </div>
+            <div class="kpi-subtext">${k.subtext}</div>
+          </div>
+        `).join('');
+      }
+
+      // 3. Update Sidebar Links & Viewer
+      const fsLink = document.getElementById('btnFullScreenLink');
+      if (fsLink) fsLink.href = cfg.htmlUrl;
+
+      const pdfLink = document.getElementById('btnDownloadPdf');
+      if (pdfLink) {
+        pdfLink.href = cfg.pdfUrl;
+        pdfLink.setAttribute('download', cfg.pdfDownload);
+      }
+
+      const label = document.getElementById('currentDocLabel');
+      if (label) label.textContent = cfg.docLabel;
+
+      const frame = document.getElementById('reportFrame');
+      if (frame) frame.src = cfg.htmlUrl;
+
+      // Reset Slide Index highlight to Slide 01
+      const items = document.querySelectorAll('.slide-index-item');
+      items.forEach((item, idx) => {
+        if (idx === 0) item.classList.add('active');
+        else item.classList.remove('active');
+      });
+    }
+
     function jumpToSlide(slideNum) {
       const frame = document.getElementById('reportFrame');
       if (frame && frame.contentWindow) {
@@ -753,7 +908,8 @@
     }
 
     function openFullscreen() {
-      window.open('report_digitale_settembre2026_personalizzato_DEF.html', '_blank');
+      const cfg = MONTHS_CONFIG[currentMonthKey] || MONTHS_CONFIG['2026-10'];
+      window.open(cfg.htmlUrl, '_blank');
     }
   </script>
 </body>
